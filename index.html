@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./phone.css">
+    <link rel="stylesheet" media="screen and ( (min-width: 375px) and (max-width: 812px))" href="./phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 812px)" href="./iphoneX.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+    <title>Shashank Domakonda|Student</title>
+</head>
+<body>
+   <nav>
+       <ul>
+        <a class="button hover-underline-animation" id="home"  href="#Home">Home</a>   
+        <a class="button hover-underline-animation" id="about" href="#About">About</a>
+        <a class="button hover-underline-animation" id="contact" href="#Contact">Contact</a>
+        <a class="hover-underline-animation" id="Linkedin"  href="https://www.linkedin.com/in/sesank-domakonda-781780203/" target="_blank">Linkedin</a>
+        <a class="hover-underline-animation" id="insta" href="https://www.instagram.com/shashank_domakonda/" target="_blank">Instagram</a>
+        <a class="hover-underline-animation" id="git" href="https://github.com/Sesank-Domakonda" target="_blank" >Github</a>
+      </ul>
+  </nav>
+       
+       <div id="Home">
+         <h1>I am Shashank, Software Developer</h1>
+         <a id="btn" class="button" href="#About">About me</a>
+         
+         
+           
+       </div>
+       <div id="About">
+        <h1> My Skill Set</h1>
+        
+           <div id="Progress">
+          
+            <label for="cp">C-Programming:</label><br>
+            <progress id="cp" value="90" max="100"></progress><br>
+            <label for="java">Java:</label><br>
+            <progress id="java" value="90" max="100"></progress><br>
+            <label for="pyt">python:</label><br>
+            <progress id="pyt" value="90" max="100"></progress><br>
+            <label for="sql">MySQL:</label><br>
+            <progress id="sql" value="90" max="100"></progress><br>
+            <label for="sql">C++:</label><br>
+            <progress id="sql" value="60" max="100"></progress><br>
+            <label for="sql">DataStructures</label><br>
+            <progress id="sql" value="90" max="100"></progress><br>
+           </div>
+           <div id="container">
+           <img id="profile" src="./tall.jpeg">
+           <article><span>Inspiration</span><br><br>
+            Computer science is a dynamic and rapidly growing area that has become an integral part of the world that we live in today. Having a degree in this field will provide you with a deep understanding of theories and emerging technologies. This knowledge and experience will allow you to develop cutting-edge solutions that address today’s challenges. When applied in an interdisciplinary fashion, students can also draw on their other areas of interest such as biology, business, cyber security, economics, engineering, information assurance, languages and linguistics, mathematics, physics, public policy, etc., to address a wider range of complex issues.
+        
+        
+        </article>
+        </div>
+       </div>
+       
+       <div id="Contact">
+           <h1>Contact me</h1>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="forms">
+              <input
+                type="text"
+                class="text-input name-input"
+                placeholder="Name"
+                name="name"
+              />
+              <input
+                type="text"
+                class="text-input subject-input"
+                placeholder="Subject"
+                name="subject"
+              /><br>
+              <input
+                type="email"
+                class="text-input email-input"
+                placeholder="Email Address"
+                name="email"
+              />
+              <input
+                type="text"
+                class="text-input phone-input"
+                placeholder="Phone Number"
+                name="phone"
+              /><br>
+              <textarea
+                class="text-input message-input"
+                placeholder="Enter Message"
+                name="message"
+              ></textarea>
+              <div class="my-2">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            
+            <button type="submit">Submit</button>
+          </form>
+       </div>
+
+       </div>
+    
+    
+       <script
+       src="https://code.jquery.com/jquery-3.3.1.min.js"
+       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+       crossorigin="anonymous"></script>
+     
+       <script>
+         // Smooth Scrolling
+         $('.button').on('click', function(event) {
+             if (this.hash !== '') {
+               event.preventDefault();
+               const hash = this.hash;
+               $('html, body').animate(
+                 {
+                   scrollTop: $(hash).offset().top
+                 },
+                 800
+               );
+             }
+           });
+       </script>
+    
+    
+    
+    
+   
+   
+  
+    
+</body>
+<footer>Copyrights 	&#169; Reserved</footer>
+</html>

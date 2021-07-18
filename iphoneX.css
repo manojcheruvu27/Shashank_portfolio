@@ -1,0 +1,61 @@
+#git{
+    display: none;
+}
+#Linkedin{
+    display: none;
+}
+#insta{
+    display: none;
+}
+#btn{
+    background-color: #0087ca;
+    color: white;
+    padding:1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 8rem;
+    scroll-behavior: smooth;
+}
+#Home{
+    background-image: url(./img/1.jpg);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#Home h1{
+    
+    padding: 70px;
+    color: black;
+    font-family: 'Barlow', sans-serif;
+   
+ }
+ #About h1{
+    margin-left: 1rem;
+}
+progress{
+    width: 70vw;
+    
+}
+#container {
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+    
+}
+#Contact .forms input{
+    padding: 2px;
+    margin: 5px;
+}
+#container article{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 0rem;
+    margin-left: 0px;
+}
+#Contact .forms textarea{
+    padding: 60px;
+    margin: 6px;
+    width: 120px;
+}

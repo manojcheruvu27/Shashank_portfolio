@@ -1,0 +1,160 @@
+body{
+    box-sizing: border-box;
+    background-color:black;
+    scroll-behavior: smooth;
+   
+}
+nav  {
+    position:relative;
+   
+}
+
+ nav ul a{
+    text-decoration: none;
+    
+
+    
+}
+
+
+.hover-underline-animation {
+    
+    padding:10px ;
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+ #showcase{
+     height: 100vh;
+     width: 100%;
+ }
+ #Home{
+     background-image: url(./img/1.jpg);
+     height: 100vh;
+     width: 100%;
+     background-repeat: no-repeat;
+ }
+ #Home h1{
+    padding-top: 20rem;
+    padding-left: 27rem;
+    color: black;
+    font-family: 'Barlow', sans-serif;
+   
+ }
+ #Linkedin{
+     float: right;
+ }
+ #insta{
+     float: right;
+ }
+ #git{
+    float: right;
+}
+#btn{
+    background-color: #0087ca;
+    color: white;
+    padding:1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 40rem;
+    scroll-behavior: smooth;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color:greenyellow;
+
+}
+ #About{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: larger;
+    margin-top: 0px;
+    scroll-behavior: smooth;
+    
+}
+
+progress{
+    width: 50vw;
+    
+}
+#About h1{
+    margin-left: 20rem;
+}
+#container article{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-left: 5px;
+}
+#container {
+    display: flex;
+    margin-top: 2rem;
+    
+    
+}
+#profile{
+    border-radius: 10px;
+}
+span{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+
+}
+.forms{
+    padding: 5rem;
+    background-color:white;
+    margin-top: 30px;
+    border-radius: 50px;
+
+}
+#Contact h1{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+#Contact .forms input{
+    padding: 5px;
+    margin: 10px;
+}
+#Contact .forms textarea{
+    padding: 60px;
+    margin: 10px;
+    width: 180px;
+}
+#Contact .forms button{
+    padding: 5px;
+    margin: 10px;
+    color:#0087ca ;
+    width: 80px;
+}
+.contact-info{
+    background-color: white;
+}
+footer{
+    background-color:darkgray;
+    margin-top: 30px;
+    padding: 10px;
+    
+}
+
+
+

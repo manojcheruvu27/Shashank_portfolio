@@ -10,19 +10,49 @@
     <link rel="stylesheet" media="screen and ( (min-width: 375px) and (max-width: 812px))" href="./phone.css">
     <link rel="stylesheet" media="screen and (max-width: 812px)" href="./iphoneX.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
     <title>Shashank Domakonda|Student</title>
+    <style>
+    .dark-mode {
+      background-color:white;
+      color: black;
+   }
+   
+  .L-contact{
+    background-color: grey;
+    border-radius: 15px;
+  }
+  .Article{
+    background-color: grey;
+  }
+  .toggleButton{
+    background-color: #0087ca;
+    margin:0;
+    padding: 0;
+    
+  }
+  #dayornight{
+    margin: 0;
+    padding: -2rem;
+  }
+  </style>
 </head>
 <body>
+  
    <nav>
        <ul>
+        
         <a class="button hover-underline-animation" id="home"  href="#Home">Home</a>   
         <a class="button hover-underline-animation" id="about" href="#About">About</a>
         <a class="button hover-underline-animation" id="contact" href="#Contact">Contact</a>
+        <button class="toggleButton"> <img id="dayornight" src="./img/day-night.png"></button>
         <a class="hover-underline-animation" id="Linkedin"  href="https://www.linkedin.com/in/sesank-domakonda-781780203/" target="_blank">Linkedin</a>
         <a class="hover-underline-animation" id="insta" href="https://www.instagram.com/shashank_domakonda/" target="_blank">Instagram</a>
         <a class="hover-underline-animation" id="git" href="https://github.com/Sesank-Domakonda" target="_blank" >Github</a>
+
       </ul>
+     
   </nav>
        
        <div id="Home">
@@ -33,7 +63,7 @@
            
        </div>
        <div id="About">
-        <h1> My Skill Set</h1>
+        <h1 class="skillset"> My Skill Set</h1>
         
            <div id="Progress">
           
@@ -61,7 +91,7 @@
        </div>
        
        <div id="Contact">
-           <h1>Contact me</h1>
+           <h1 id="Contact-Heading">Contact me</h1>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="forms">
               <input
@@ -123,7 +153,26 @@
                );
              }
            });
-       </script>
+           document .querySelector(".toggleButton") .addEventListener("click", toggleDarKMode);
+  function toggleDarKMode() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+     var ele = document.getElementById("About");
+     ele.classList.toggle("L-contact");
+     var ele1 = document.getElementById("Contact");
+     ele1.classList.toggle("L-contact");
+
+
+    
+  }
+ 
+
+ </script>
+
+
+ 
+
+
     
     
     
